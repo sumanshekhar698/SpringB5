@@ -1,0 +1,49 @@
+https://www.baeldung.com/maven
+https://docs.spring.io/spring-framework/docs/6.0.0/reference/pdf/spring-framework.pdf
+https://docs.spring.io/spring-framework/docs/5.0.0.M1/spring-framework-reference/pdf/spring-framework-reference.pdf
+
+Web Doc
+https://docs.spring.io/spring-framework/reference/overview.html
+____________________________________________________________________
+Spring Framework
+--------------------------------------------------------------------
+
+
+Build Tools for Java ----> Maven (XML based pom) ✅ and Gradle (Groovy / Kotlin based)
+Maven Build Tool is Compleley free
+
+🔸Dependency Managemnet of 3rd party libraries
+🔸Packing/Building into a single file (jar,war,zip)
+🔸Automation
+🔸Plugin Support
+🔸Parent and Child project support using Maven modules
+🔸Testing
+
+
+To work with spring you need atleast 2 dependency
+--------------------------------------------------------------------
+🔸spring core
+🔸spring context
+
+Spring facilates
+🔸DI(Dependency Injection)
+🔸IOC (Inversion of Control)
+
+
+
+
+	Spring IoC (Inversion of Control) and DI (Dependency Injection) are two concepts that are related to each other.
+	IoC is a principle that transfers the control of creating and managing objects to a container or framework, such as Spring.
+	DI is a pattern that implements IoC by injecting the dependencies of an object through its constructor, setter methods, or fields.
+	Spring IoC Container is the core of Spring Framework.
+	It creates the objects, configures and assembles their dependencies, manages their entire life cycle.
+	The Container uses DI to manage the components that make up the application123.
+	
+	
+Some of the benefits of using Spring IoC and DI are:
+🔸Decoupling the objects from their dependencies and making them easier to test and reuse
+🔸Reducing the boilerplate code for creating and initializing objects
+🔸Improving the modularity and flexibility of the application
+🔸Allowing the application to be configurable through external metadata such as XML, Java annotations, or Java code
+
+By default Spring follows Singelton pattern

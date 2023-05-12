@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean name="s2" class="com.springb5.basics.Student">
+		<!-- collaborators and configuration for this bean go here -->
+		<property name="name">
+			<value>Michael</value>
+		</property>
+
+		<property name="age">
+			<value>27</value>
+		</property>
+
+	</bean>
+
+	<bean name="s3" class="com.springb5.basics.Student">
+		<!-- collaborators and configuration for this bean go here -->
+		<property name="name">
+			<value>Grace</value>
+		</property>
+
+		<property name="age">
+			<value>22</value>
+		</property>
+
+	</bean>
+
+
+	<!-- more bean definitions go here -->
+</beans>

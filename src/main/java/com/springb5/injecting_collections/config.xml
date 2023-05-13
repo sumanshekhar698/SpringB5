@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/beans/spring-context.xsd
+ http://www.springframework.org/schema/util
+ http://www.springframework.org/schema/util/spring-util.xsd">
+
+	<bean class="com.springb5.injecting_collections.Employee"
+		name="e1">
+
+		<property name="name">
+			<value>Binod</value>
+		</property>
+
+		<property name="phones">
+			<list>
+				<value>97779707778</value>
+				<value>22542525</value>
+				<value>252525525</value>
+			</list>
+		</property>
+
+		<property name="address">
+			<set>
+				<value>Delhi</value>
+				<value>Delhi</value>
+				<value>Patna</value>
+			</set>
+		</property>
+
+		<property name="coursesEnroled">
+			<map>
+				<entry key="Java" value="1"></entry>
+				<entry key="Python" value="1.5"></entry>
+				<entry key="Java" value="2"></entry>
+			</map>
+		</property>
+
+	</bean>
+
+
+
+
+</beans>

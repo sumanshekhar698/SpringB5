@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/beans/spring-context.xsd
+ http://www.springframework.org/schema/util
+ http://www.springframework.org/schema/util/spring-util.xsd">
+
+	<bean class="com.springb5.constructor_injections.Aadhar" name="a1"
+		c:aadharNo="789909" c:address="Delhi" c:dob="7:08:2000">
+	</bean>
+
+	<bean class="com.springb5.constructor_injections.Aadhar" name="a2">
+		<constructor-arg>
+			<value>686698</value>
+		</constructor-arg>
+
+		<constructor-arg>
+			<value>Banagalore</value>
+		</constructor-arg>
+
+		<constructor-arg>
+			<value>14:08:2001</value>
+		</constructor-arg>
+	</bean>
+
+	<bean class="com.springb5.constructor_injections.Aadhar" name="a3"
+		c:address="Kozikode" c:aadharNo="97977" c:dob="17:08:2000">
+	</bean>
+
+	<bean class="com.springb5.constructor_injections.Aadhar" name="a4">
+
+
+		<constructor-arg index="2">
+			<value>19:08:2002</value>
+		</constructor-arg>
+
+		<constructor-arg index="0" value="4442344">
+		</constructor-arg>
+
+		<constructor-arg index="1" value=""></constructor-arg>
+
+
+	</bean>
+
+
+	<bean class="com.springb5.constructor_injections.IndianCitizen"
+		name="i1" c:name="Shyam" c:aadharCard-ref="a1">
+	</bean>
+
+
+</beans>

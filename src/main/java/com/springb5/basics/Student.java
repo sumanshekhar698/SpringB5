@@ -1,5 +1,8 @@
 package com.springb5.basics;
 
+import org.springframework.context.annotation.Scope;
+
+//@Scope("prototype")//take it as a assingment
 public class Student {// POJO Class -Plain Old Java Object
 	private String name;
 	private int age;

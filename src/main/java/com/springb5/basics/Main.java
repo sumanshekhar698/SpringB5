@@ -25,7 +25,8 @@ public class Main {
 		// 10Lac
 		//25Lacs
 		
-		Student s3 = (Student) context.getBean("s3");
+		Object o1 = context.getBean("s3");
+		Student s3 = (Student) o1;
 		System.out.println(s3.hashCode());
 		s3.setAge(100);
 		System.out.println(s3);

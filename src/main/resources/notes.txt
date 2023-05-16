@@ -47,3 +47,18 @@ Some of the benefits of using Spring IoC and DI are:
 🔸Allowing the application to be configurable through external metadata such as XML, Java annotations, or Java code
 
 By default Spring follows Singelton pattern
+
+
+
+
+SPRING JDBC
+
+
+mysql> create table student(id int primary key, name varchar(100) not null,city varchar(200));
+
+
+
+primary key ==> duplicate values not allowed  and no null values
+ identifies every row distinctly
+ 
+ 

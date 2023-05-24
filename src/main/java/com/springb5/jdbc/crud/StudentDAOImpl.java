@@ -36,9 +36,22 @@ public class StudentDAOImpl implements StudentDAO {
 				return new Student(rs.getInt(1), rs.getString(2), rs.getString(3));
 			}
 
-		},id);
+		}, id);
 
 		return s;
+	}
+
+	public int update(Student s) {
+		String query = "UPDATE STUDENT SET NAME=?,CITY=? WHERE ID=?";
+		int update = this.jdbc.update(query, s.getName(), s.getCity(), s.getId());
+		return update;
+	}
+
+	public int delete(int id) {
+		String query = "DELETE FROM STUDENT WHERE ID=?";
+		int delete = this.jdbc.update(query, id);
+
+		return delete;
 	}
 
 }

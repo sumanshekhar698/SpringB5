@@ -7,11 +7,14 @@ public interface StudentDAO {
 
 	// R - ead
 	public Student getSingleStudent(int id);
+	//multiple student read
+	//get all student //query()
 	
 	//U
-	
+	public int update(Student s);
 	
 	
 	//D
+	public int delete(int id);
 
 }

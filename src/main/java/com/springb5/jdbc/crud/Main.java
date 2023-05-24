@@ -14,8 +14,18 @@ public class Main {
 //		int insertedRows = studentDAOImplBean.insert(new Student(99, "Jackson", "Florida"));
 //		System.out.println(insertedRows);
 		
+		
+		
 		Student s100 = studentDAOImplBean.getSingleStudent(100);
 		System.out.println(s100);
+		
+		
+		studentDAOImplBean.update(new Student(s100.getId(), s100.getName(), "Varanasi"));
+		
+		Student s100_updated = studentDAOImplBean.getSingleStudent(100);
+		System.out.println(s100_updated);
+		
+//		studentDAOImplBean.de
 
 	}
 
